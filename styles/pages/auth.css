@@ -1,0 +1,18 @@
+@import "../components/form.css";
+
+.auth {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth h1 {
+  margin-block: 1rem 2.5rem;
+}
+
+/* .auth-logo {
+  margin-bottom: 2rem;
+} */

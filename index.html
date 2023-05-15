@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/pages/home.css" />
+
+    <script src="scripts/rippleEffect.js" defer></script>
+
+    <title>Tortotoro</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <a
+          href="index.html"
+          title="Вернуться на главную"
+          class="logo sidebar-logo"
+        >
+          <span>
+            <svg
+              width="48"
+              height="54"
+              viewBox="0 0 48 54"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.8605 0L43.5905 35.3063C44.8099 37.4884 42.4402 39.9183 40.2282 38.7541L23.8605 30.1395L7.49277 38.7541C5.28075 39.9183 2.91107 37.4884 4.13047 35.3063L23.8605 0Z"
+                fill="#95D5FA"
+              />
+              <path
+                d="M23.8605 11.3024L43.5905 46.6087C44.8099 48.7908 42.4402 51.2207 40.2282 50.0565L23.8605 41.4419L7.49277 50.0565C5.28075 51.2207 2.91107 48.7908 4.13047 46.6087L23.8605 11.3024Z"
+                fill="url(#paint0_linear_601_300)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_601_300"
+                  x1="23.8605"
+                  y1="51.4884"
+                  x2="23.8605"
+                  y2="15.0698"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1A2B88" />
+                  <stop offset="1" stop-color="#1A2B88" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <p>Tort<span>otoro</span></p>
+        </a>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav-list">
+            <li class="sidebar-nav-item">
+              <a
+                href="#"
+                class="sidebar-nav-link btn text-btn"
+                data-ripple
+                title="Dashboard"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 96 960 960"
+                    width="24"
+                  >
+                    <path
+                      d="M80 936v-80h800v80H80Zm40-120V536h120v280H120Zm200 0V336h120v480H320Zm200 0V456h120v360H520Zm200 0V216h120v600H720Z"
+                    />
+                  </svg>
+                </span>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="sidebar-nav-item">
+              <a
+                href="auth.html"
+                class="sidebar-nav-link btn text-btn"
+                data-ripple
+                title="Авторизация"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 96 960 960"
+                    width="24"
+                  >
+                    <path
+                      d="M480 936v-80h280V296H480v-80h280q33 0 56.5 23.5T840 296v560q0 33-23.5 56.5T760 936H480Zm-80-160-55-58 102-102H120v-80h327L345 434l55-58 200 200-200 200Z"
+                    />
+                  </svg>
+                </span>
+                <p>Авторизация</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar-profile">
+          <div class="sidebar-profile__avatar">
+            <img src="assets/images/profile.png" alt="Ваша фотография" />
+          </div>
+          <p class="sidebar-profile__name">Gavano</p>
+          <a href="#" class="sidebar-profile__btn icon-btn" title="Выйти" data-ripple>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 96 960 960"
+              width="24"
+            >
+              <path
+                d="M200 936q-33 0-56.5-23.5T120 856V296q0-33 23.5-56.5T200 216h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585 434l55-58 200 200-200 200Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </aside>
+      <main class="page-content">
+        <header class="header">
+          Good Morning, <span class="rich-text">Gavano</span>!
+        </header>
+        <section style="min-height: 100vh">Section 1</section>
+        <section style="min-height: 100vh">Section 1</section>
+      </main>
+    </div>
+  </body>
+</html>

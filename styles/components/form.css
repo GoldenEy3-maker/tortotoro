@@ -1,0 +1,63 @@
+.form {
+  display: grid;
+  gap: 2rem;
+}
+
+.form-inputs {
+  display: grid;
+  gap: calc(1.5rem + var(--primary-y-offset-bxs));
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input-element {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid hsl(var(--outline-hsl));
+  border-radius: var(--large-shape);
+
+  transition: 300ms ease;
+}
+
+.input-element label {
+  position: absolute;
+  left: 1rem;
+  top: 1em;
+
+  padding-inline: 0.3rem;
+
+  background-color: hsl(var(--surface-hsl));
+
+  transition: 300ms ease;
+}
+
+.input-element input {
+  padding: 1rem 1.5rem;
+
+  flex: 1;
+}
+
+.input-element input:focus {
+  outline: none;
+}
+
+.input-element:has(input:focus) {
+  border-color: hsla(var(--primary-hsl), 0.3);
+
+  box-shadow: var(--primary-offset-bxs)
+    hsla(var(--primary-hsl), var(--primary-alpha-bxs));
+}
+
+.input-element._active label {
+  top: -1em;
+
+  font-size: var(--body-m-fs);
+}
