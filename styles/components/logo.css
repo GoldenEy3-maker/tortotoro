@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo > span {
+  flex-shrink: 0;
+}
+
+.logo p {
+  font-size: var(--display-s-fs);
+  color: hsl(var(--primary-hsl));
+}
+
+.logo p span {
+  font-weight: bold;
+}

@@ -1,0 +1,12 @@
+.section {
+  background-color: hsl(var(--primary-container-hsl));
+
+  padding: 2rem;
+  border-radius: var(--large-shape);
+  box-shadow: 0 0 10px hsla(var(--primary-hsl), var(--primary-alpha-bxs));
+}
+
+.seciton-title {
+  font-size: var(--title-l-fs);
+  font-weight: 500;
+}

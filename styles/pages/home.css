@@ -1,1 +1,41 @@
 @import "../components/sidebar.css";
+@import "../components/header.css";
+@import "../components/section.css";
+
+.stats-list {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 2rem;
+}
+
+.stats-item-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 0.8rem;
+}
+
+.stats-item-header-progress {
+  display: flex;
+  align-items: center;
+  background-color: hsl(var(--primary-90-hsl));
+  border-radius: var(--large-shape);
+  padding: 0.2rem 0.5rem;
+
+  font-size: var(--body-s-fs);
+}
+
+.stats-item__value {
+  font-size: var(--title-l-fs);
+  font-weight: bold;
+  color: hsl(var(--primary-hsl));
+}
+
+.stats-item-footer {
+  margin-top: 0.3rem;
+}

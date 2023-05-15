@@ -1,0 +1,28 @@
+[data-ripple] {
+  position: relative;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ripple-element {
+  display: block;
+  position: absolute;
+
+  border-radius: 50%;
+
+  opacity: 0.1;
+
+  background-color: hsl(var(--ripple-hsl));
+  transform: scale(0);
+
+  user-select: none;
+  pointer-events: none;
+
+  animation: ripple linear forwards;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(3);
+  }
+}

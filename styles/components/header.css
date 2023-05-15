@@ -1,0 +1,10 @@
+.header {
+  position: sticky;
+  top: 0;
+
+  padding-block: var(--safe-area-pd);
+
+  margin-bottom: 1.5rem;
+
+  background-color: hsl(var(--surface-hsl));
+}

@@ -3,6 +3,7 @@
   --surface-base-hsl: 274, 40%;
   --on-surface-base-hsl: 0, 0%;
   --primary-base-hsl: 274, 69%;
+  --primary-container-base-hsl: 0, 0%;
   --on-primary-base-hsl: 0, 0%;
   --outline-base-hsl: 0, 0%;
   --ripple-base-hsl: 0, 0%;
@@ -12,20 +13,21 @@
   --surface-hsl: var(--surface-base-hsl), 95%;
   --on-surface-hsl: var(--on-surface-base-hsl), 0%;
   --primary-hsl: var(--primary-base-hsl), 50%;
+  --primary-container-hsl: var(--primary-container-base-hsl), 100%;
   --on-primary-hsl: var(--on-primary-base-hsl), 100%;
   --primary-40-hsl: var(--primary-base-hsl), 44%;
-  --primary-90-lowest-hsl: var(--primary-base-hsl), 90%;
-  --primary-90-hsl: var(--primary-base-hsl), 93%;
-  --outline-hsl: var(--outline-base-hsl), 50%;
+  --primary-90-low-hsl: var(--primary-base-hsl), 92%;
+  --primary-90-lowest-hsl: var(--primary-base-hsl), 93%;
+  --primary-90-hsl: var(--primary-base-hsl), 96%;
+  --outline-hsl: var(--outline-base-hsl), 70%;
   --default-ripple-hsl: var(--ripple-base-hsl), 0%;
   --modified-ripple-hsl: var(--primary-hsl);
   --ripple-hsl: var(--modified-ripple-hsl);
   --default-hover-hsl: var(--default-hover-base-hsl), 90%;
 
   /* Sizes */
-  --container-mw: calc(1200px + var(--container-pgi) * 2);
+  --container-mw: calc(1400px + var(--container-pgi) * 2);
   --container-pgi: 1rem;
-  --wrapper-gap: 2rem;
   --safe-area-pd: 1.5rem;
 
   /* UTILS */
@@ -41,9 +43,11 @@
 
   --display-s-fs: 36px;
   --headline-l-fs: 32px;
+  --headline-m-fs: 28px;
   --title-l-fs: 22px;
   --body-l-fs: 16px;
   --body-m-fs: 14px;
+  --body-s-fs: 12px;
 
   font-size: var(--body-l-fs);
   font-family: var(--main-ff);

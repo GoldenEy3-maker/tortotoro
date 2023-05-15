@@ -1,17 +1,10 @@
 @import "./var.css";
 @import "./default.css";
-
-h1 {
-  font-size: var(--headline-l-fs);
-}
-
-svg {
-  fill: hsl(var(--primary-hsl));
-}
+@import "./components/btn.css";
+@import "./components/ripple.css";
 
 .wrapper {
   display: flex;
-  gap: var(--wrapper-gap);
 
   min-height: inherit;
 }
@@ -25,130 +18,19 @@ svg {
   margin-inline: auto;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo > span {
-  flex-shrink: 0;
-}
-
-.logo p {
-  font-size: var(--display-s-fs);
-  color: hsl(var(--primary-hsl));
-}
-
-.logo p span {
-  font-weight: bold;
-}
-
 .page-content {
   flex: 1;
-
-  padding-block: var(--safe-area-pd);
 }
 
-[data-ripple] {
-  position: relative;
-  overflow: hidden;
-  -webkit-tap-highlight-color: transparent;
+.page-content__wrapper {
+  padding-inline: 1rem;
 }
 
-.ripple-element {
-  display: block;
-  position: absolute;
-
-  border-radius: 50%;
-
-  opacity: 0.1;
-
-  background-color: hsl(var(--ripple-hsl));
-  transform: scale(0);
-
-  user-select: none;
-  pointer-events: none;
-
-  animation: ripple linear forwards;
+.page-title {
+  font-size: var(--headline-l-fs);
+  font-weight: 500;
 }
 
 .rich-text {
   color: hsl(var(--primary-hsl));
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  gap: 1rem;
-
-  border-radius: var(--large-shape);
-
-  padding: 0.4rem 1.8rem;
-
-  transition: 300ms ease;
-}
-
-.icon-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  padding: 0.5rem;
-
-  transition: 300ms ease;
-}
-
-.text-btn {
-  color: hsl(var(--primary-hsl));
-}
-
-.filled-btn {
-  --ripple-hsl: var(--default-ripple-hsl);
-
-  color: hsl(var(--on-primary-hsl));
-  background-color: hsl(var(--primary-hsl));
-}
-
-.outlined-btn {
-  color: hsl(var(--primary-hsl));
-  border: 1px solid hsl(var(--outline-hsl));
-}
-
-.elevated-btn {
-  color: hsl(var(--primary-hsl));
-  background-color: hsl(var(--primary-90-hsl));
-  box-shadow: 0 2px 2px hsla(var(--primary-hsl), var(--primary-alpha-bxs));
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .text-btn:hover {
-    box-shadow: var(--primary-offset-bxs)
-      hsla(var(--primary-hsl), var(--primary-alpha-bxs));
-  }
-
-  .filled-btn:hover {
-    background-color: hsl(var(--primary-40-hsl));
-  }
-
-  .outlined-btn:hover {
-    background-color: hsl(var(--primary-90-hsl));
-  }
-
-  .elevated-btn:hover {
-    background-color: hsl(var(--primary-90-lowest-hsl));
-  }
-
-  .icon-btn:hover {
-    background-color: hsl(var(--primary-90-hsl));
-  }
-}
-
-@keyframes ripple {
-  to {
-    transform: scale(3);
-  }
 }

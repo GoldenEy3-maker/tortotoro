@@ -1,3 +1,5 @@
+@import "./logo.css";
+
 .sidebar {
   position: sticky;
   top: 0;
@@ -12,12 +14,11 @@
 
   overflow: auto;
 
-  padding-block: var(--safe-area-pd) 2.5rem;
+  padding-block: var(--safe-area-pd);
   padding-inline: 3rem;
 
   width: 100%;
-  max-width: calc(400px - var(--wrapper-gap, 0));
-  /* flex: 0 1 calc(400px - var(--wrapper-gap, 0)); */
+  max-width: 400px;
 }
 
 .sidebar-nav-list {
@@ -25,8 +26,16 @@
   gap: 1rem;
 }
 
+.sidebar-nav-list .devider {
+  width: 100%;
+  height: 1px;
+
+  background-color: hsl(var(--outline-hsl));
+  opacity: 0.5;
+}
+
 .sidebar-nav-link {
-  padding: 0.7rem 1.5rem;
+  padding: 1rem 2rem;
   font-size: var(--title-l-fs);
 }
 
@@ -42,16 +51,27 @@
 .sidebar-profile__avatar {
   flex-shrink: 0;
 
+  width: 50px;
+  height: 50px;
+
   border-radius: 50%;
 
-  box-shadow: 0 5px 5px hsla(var(--primary-hsl), var(--primary-alpha-bxs));
+  box-shadow: 0 0 10px hsla(var(--primary-hsl), var(--primary-alpha-bxs));
+}
+
+.sidebar-profile__avatar img {
+  width: 100%;
+  height: 100%;
 }
 
 .sidebar-profile__name {
   flex-grow: 1;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  font-size: var(--title-l-fs);
   font-weight: bold;
 }
 

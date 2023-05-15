@@ -34,7 +34,7 @@
 
   padding-inline: 0.3rem;
 
-  background-color: hsl(var(--surface-hsl));
+  background-color: hsl(var(--primary-container-hsl));
 
   transition: 300ms ease;
 }

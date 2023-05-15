@@ -1,0 +1,87 @@
+.btn {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1rem;
+
+  border-radius: var(--large-shape);
+
+  padding: 0.4rem 1.8rem;
+
+  transition: 300ms ease;
+}
+
+.btn._icon {
+  justify-content: center;
+  gap: 0;
+
+  border-radius: 50%;
+
+  padding: 0.7rem;
+}
+
+.btn._text {
+  color: hsl(var(--primary-hsl));
+}
+
+.btn._filled {
+  --ripple-hsl: var(--default-ripple-hsl);
+
+  color: hsl(var(--on-primary-hsl));
+  background-color: hsl(var(--primary-hsl));
+}
+
+.btn._outlined {
+  color: hsl(var(--primary-hsl));
+  border: 1px solid hsl(var(--outline-hsl));
+}
+
+.btn._elevated {
+  color: hsl(var(--primary-hsl));
+  background-color: hsl(var(--primary-90-hsl));
+  box-shadow: 0 3px 3px hsla(var(--primary-hsl), var(--primary-alpha-bxs));
+}
+
+.btn svg {
+  fill: hsl(var(--primary-hsl));
+  transition: 300ms ease;
+}
+
+.btn._on-surface {
+  color: hsl(var(--on-surface-hsl));
+}
+
+.btn._on-surface svg {
+  fill: hsl(var(--on-surface-hsl));
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn._text:hover {
+    box-shadow: var(--primary-offset-bxs)
+      hsla(var(--primary-hsl), var(--primary-alpha-bxs));
+  }
+
+  .btn._filled:hover {
+    background-color: hsl(var(--primary-40-hsl));
+  }
+
+  .btn._outlined:hover {
+    background-color: hsl(var(--primary-90-hsl));
+  }
+
+  .btn._elevated:hover {
+    background-color: hsl(var(--primary-90-lowest-hsl));
+  }
+
+  .btn._icon:hover {
+    background-color: hsl(var(--primary-90-low-hsl));
+  }
+
+  .btn._on-surface:hover {
+    color: hsl(var(--primary-hsl));
+  }
+
+  .btn._on-surface:hover svg {
+    fill: hsl(var(--primary-hsl));
+  }
+}
